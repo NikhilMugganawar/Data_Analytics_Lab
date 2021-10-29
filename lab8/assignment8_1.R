@@ -50,6 +50,7 @@ colnames(dt_knn) <- c("DecisionTree","knn")
 dt_knn
 ####################################################
 #ENTROPY AS A MESAURE OF UNCERTAINTY
+library("entropy")
 vote_entropy <- function(x, type='class', entropy_method='ML') {
   it <- do.call(itertools2::izip, x)
   disagreement <- sapply(it, function(obs) {
