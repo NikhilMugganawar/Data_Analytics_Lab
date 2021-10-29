@@ -13,7 +13,7 @@ inspect(rules[1:10])
 # Create an item frequency plot for the top 20 items
 itemFrequencyPlot(Groceries,topN=20,type="absolute")
 #Continue the same with minimum support of 20% and the minimum confidence of 50%.
-new_rules <- apriori(Groceries,parameter = list(supp = 0.02, conf = 0.5))
+new_rules <- apriori(Groceries,parameter = list(supp = 0.002, conf = 0.5))
 options(digits=2)
 #Displays the first 10 strong association rules.
 inspect(new_rules[1:1])
