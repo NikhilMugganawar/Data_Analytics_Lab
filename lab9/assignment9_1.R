@@ -1,4 +1,7 @@
 #CREATE A GRAPH
+library(igraph)
+library(evaluate)
+library(expm)
 g <- graph(c(
   1, 2, 1, 3, 1, 4, 
   2, 3, 2, 6, 3, 1, 
